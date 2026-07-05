@@ -62,7 +62,6 @@ function renderProductsGrid() {
       </div>
     `;
   });
-
   document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
   function updateCartQuantity() {
@@ -75,7 +74,6 @@ function renderProductsGrid() {
     document.querySelector('.js-cart-quantity')
       .innerHTML = cartQuantity;
   }
-
   document.querySelectorAll('.js-add-to-cart')
     .forEach((button) => {
       button.addEventListener('click', () => {
